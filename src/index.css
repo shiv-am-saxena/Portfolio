@@ -1,0 +1,130 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #121212;
+}
+
+.navbar {
+    position: relative;
+    height: 8vh;
+    width: 100%;
+    /* background: #fff; */
+    display: flex;
+    /* flex-wrap:nowrap; */
+    justify-content: space-around;
+    padding: 0 2vh;
+    gap: 3vh;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    border-bottom: 1px solid;
+}
+
+.svgLogo>svg>path {
+    z-index: 2;
+    animation: animate 8s both infinite;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+    line-height: 8vh;
+    /* font-weight: 500; */
+    font-size: 2.5vh;
+    /* border-top: 1px solid; */
+}
+
+@keyframes animate {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    54% {
+        stroke-dashoffset: 190;
+        fill: transparent;
+    }
+
+    56% {
+        stroke-dashoffset: 190;
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.btn,
+.btn>svg {
+    outline: none;
+    background: transparent;
+    border: none;
+    height: 80%;
+    width: fit-content;
+    display: none;
+    z-index: 2;
+}
+
+.rightMenu {
+    display: flex;
+    gap: 5vh;
+    font-size: larger;
+}
+
+.rightMenu>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    color:white;
+}
+/* Mobile */
+@media (max-width: 875px) {
+    .svgLogo>svg {
+        height: 70%;
+        /* background: #000; */
+    }
+
+    .btn,
+    .btn>svg {
+        display: block;
+    }
+
+    .rightMenu {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 0%;
+        /* background: ; */
+        backdrop-filter: blur(10px);
+        align-items: center;
+        width: 100%;
+        opacity:0;
+        padding: 5vh;
+        /* background: #999; */
+        border: 1px solid #fff;
+        transition: all ease 0.25s;
+        z-index: 1;
+    }
+    .footer{
+        font-size: 2vh;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {}
