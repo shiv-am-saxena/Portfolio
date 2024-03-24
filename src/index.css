@@ -5,6 +5,12 @@
     font-family: Gilroy;
     src: url(../public/Gilroy-Regular.ttf);
 }
+:root{
+    --skyblue: #44bbff; 
+    --green: #4BC071;
+    --purple: #9E58DC;
+    --grey: #888888;
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +22,16 @@ html,
 body {
     height: 100%;
     width: 100%;
+    /* background: #121212; */
+}
+body[theme = light]
+{
+    background: #fff;
+}
+body[theme = dark]
+{
     background: #121212;
 }
-
 .navbar {
     position: relative;
     height: 8vh;
@@ -94,8 +107,8 @@ body {
     text-decoration: none;
     color: #fff;
 }
-p{
-    color:white;
+.footer>p{
+    color:#fff;
 }
 /* Mobile */
 @media (max-width: 875px) {
@@ -114,16 +127,16 @@ p{
         position: absolute;
         flex-direction: column;
         top: 0%;
-        /* background: ; */
         backdrop-filter: blur(10px);
         align-items: center;
         width: 100%;
         opacity:0;
         padding: 5vh;
-        /* background: #999; */
         border: 1px solid #fff;
         transition: all ease 0.25s;
         z-index: 1;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
     .footer{
         font-size: 2vh;
