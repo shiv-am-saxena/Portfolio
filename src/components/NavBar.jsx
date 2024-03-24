@@ -35,7 +35,7 @@ const NavBar = () => {
 
 	return (
 		<>
-			<nav className="navbar" style={{ borderColor: color }}>
+			<nav className="navbar" style={{ borderColor: color, backgroundColor: '#121212' }}>
 				<div className="svgLogo">
 					<Logo color={color} />
 				</div>

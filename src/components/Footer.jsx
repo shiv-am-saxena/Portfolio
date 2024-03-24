@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className="footer" style={{ background: color }}>
-				<p>Made with ❤️ by Shivam © 2020 - {new Date().getFullYear()}</p>
+				<p>Made with ❤️ by Shivam Saxena © 2020 - {new Date().getFullYear()}</p>
 			</div>
 		</>
 	)
