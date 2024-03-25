@@ -7,5 +7,6 @@ import Hamburger from "./Hamburger";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import DownloadBtn from "./DownloadBtn";
+import HeadingComponent from "./HeadingComponent";
 
-export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn};
+export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn, HeadingComponent};

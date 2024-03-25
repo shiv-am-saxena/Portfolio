@@ -26,6 +26,7 @@ const App = () => {
 			<NavBar />
 			{/* <button className='themeBtn' onClick={mode? darkMode:lightMode} >{mode? 'dark':'light'}</button> */}
 			<Home/>
+			<About/>
 			<Footer />
 		</ContextProvider>
 	)
