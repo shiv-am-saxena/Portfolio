@@ -6,5 +6,6 @@ import Logo from './Shivam'
 import Hamburger from "./Hamburger";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import DownloadBtn from "./DownloadBtn";
 
-export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer };
+export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn};

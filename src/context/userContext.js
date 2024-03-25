@@ -7,6 +7,7 @@ export const UserContext = createContext({
     lightMode : () =>{},
     darkMode : () =>{},
     color: '#44bbff',
+    colorName: 'skyblue',
 });
 
 export const ContextProvider = UserContext.Provider;

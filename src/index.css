@@ -156,12 +156,47 @@ body[theme=dark] {
     font-size: 2.5vh;
     line-height: 4.5vh;
     font-weight: 300;
+    margin-bottom: 2vh;
 }
 
 #home>.rightHome>img {
     width: 90%;
 }
-
+.dwnBtn
+{
+    position: relative;
+    color:var(--skyblue);
+    text-decoration: none;
+    margin: 5vh 0;
+    padding:1vh 1.5vh;
+    border: 1px solid var(--skyblue);
+    border-radius: 10px;
+    font-size: 2vh;
+    overflow: hidden;
+    z-index: 10;
+}
+.dwnBtn::after
+{
+    content: '';
+    position: absolute;
+    height: 0%;
+    color: #fff;
+    width: 100%;
+    color: #121212;
+    top: 100%;
+    left: 0;
+    border-radius: 100% 100% 10px 10px;
+    background: var(--skyblue);
+    transition: all ease 0.2s;
+    z-index: -1;
+    overflow: hidden;
+}
+.dwnBtn:hover::after
+{
+    height: 100%;
+    border-radius: 10px;
+    top: 0%;
+}
 .footer {
     height: 8vh;
     width: 100%;

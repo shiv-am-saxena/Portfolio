@@ -6,6 +6,7 @@ const App = () => {
 	const [color, setColor] = useState('#44bbff');
 	const [themeMode, setTheme] = useState('dark');
 	const [mode, setMode] = useState(false);
+	const [colorName, setColorName] = useState('skyblue');
 
 	const lightMode = () => {
 		setTheme('light');
@@ -21,7 +22,7 @@ const App = () => {
 	}, [themeMode])
 
 	return (
-		<ContextProvider value={{ themeMode, lightMode, darkMode, color }}>
+		<ContextProvider value={{ themeMode, lightMode, darkMode, color, colorName }}>
 			<NavBar />
 			{/* <button className='themeBtn' onClick={mode? darkMode:lightMode} >{mode? 'dark':'light'}</button> */}
 			<Home/>

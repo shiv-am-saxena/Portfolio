@@ -1,8 +1,8 @@
 import useUserContext from '../../context/userContext'
 import codePic from '../../assets/Images/code.png';
-import resume from '../../assets/Images/Shivam_Saxena.pdf'
 import Typed from 'typed.js';
 import { useRef, useEffect } from 'react';
+import DownloadBtn from '../DownloadBtn';
 const Home = () => {
 	const { color } = useUserContext();
 	const type = useRef();
@@ -37,7 +37,7 @@ const Home = () => {
 						I'm a <span ref={type}/>
 					</h1>
 					<p className='sum'>Welcome to my official Portfolio website where I put<br /> all my work related to Frontend and Software<br /> Development</p>
-					<a href={resume} download="Shivam Saxena Resume.pdf" className=''>Download CV</a>
+					<DownloadBtn/>
 				</div>
 			</div>
 			<div className="rightHome">
