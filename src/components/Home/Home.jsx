@@ -24,7 +24,7 @@ const Home = () => {
 			typed.destroy();
 		};
 	}, [])
-	
+
 
 	return (
 		<div className='section' id='home'>
@@ -34,14 +34,20 @@ const Home = () => {
 						I am
 						<span style={{ color: color }}> Shivam Saxena.
 						</span><br />
-						I'm a <span ref={type}/>
+						I'm a <span ref={type} />
 					</h1>
 					<p className='sum'>Welcome to my official Portfolio website where I put<br /> all my work related to Front-end and Software<br /> Development</p>
-					<DownloadBtn/>
+					<DownloadBtn />
+					<div className="mediaLinks">
+						<a href="https://www.github.com/shiv-am-saxena/" target='_blank'>Github</a>
+						<a href="https://www.linkedin.com/in/shiv-am-saxena/" target='_blank'>Linkedin</a>
+						<a href="https://www.twitter.com/shiv_am_saxena" target='_blank'>Twitter</a>
+						<span className="arrow" style={{borderColor: color}}></span>
+					</div>
 				</div>
 			</div>
 			<div className="rightHome">
-				<img src={codePic} alt="Information about me" style={{ boxShadow: `5px 5px 0px ${color},10px 10px 0px ${color}cc,15px 15px 0 ${color}b3,20px 20px 0 ${color}99,25px 25px 0 ${color}80,30px 30px 0 ${color}66,35px 35px 0 ${color}4d,40px 40px 0 ${color}33,45px 45px 0 ${color}1a` }} />
+				<img src={codePic} alt="Information about me" style={{ boxShadow: ((screen.width <= 875) ? `5px 5px 0px ${color},10px 10px 0px ${color}cc,15px 15px 0 ${color}b3,20px 20px 0 ${color}99,25px 25px 0 ${color}80` : `5px 5px 0px ${color},10px 10px 0px ${color}cc,15px 15px 0 ${color}b3,20px 20px 0 ${color}99,25px 25px 0 ${color}80,30px 30px 0 ${color}66,35px 35px 0 ${color}4d,40px 40px 0 ${color}33,45px 45px 0 ${color}1a`) }} />
 			</div>
 		</div>
 	)

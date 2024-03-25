@@ -1,6 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 @font-face {
     font-family: Gilroy;
     src: url(../public/Gilroy-Regular.ttf);
@@ -172,43 +169,62 @@ body[theme=dark] {
 
 #home>.rightHome>img {
     width: 90%;
+    transform: translateX(-1vh);
 }
 .dwnBtn
 {
-    display: block;
+    display:block;
     width: fit-content;
     position: relative;
     color:var(--skyblue);
     text-decoration: none;
     margin: 5vh 0;
-    padding:1vh 1.5vh;
+    padding:1vh 4vh;
     border: 1px solid var(--skyblue);
     border-radius: 10px;
     font-size: 2vh;
+    z-index: 0;
     overflow: hidden;
     /* z-index: 10; */
 }
-.dwnBtn::after
+.dwnBtn::before
 {
     content: '';
+    display: block;
     position: absolute;
     height: 100%;
     width: 100%;
-    color: #121212;
     top: 100%;
     left: 0;
     border-radius: 100%;
     background: var(--skyblue);
-    transition: all ease 0.2s;
-    /* z-index: -1; */
-    overflow: hidden;
+    transition: all ease 0.25s;
+    z-index: -100;
 }
-.dwnBtn:hover::after 
+.dwnBtn:hover::before 
 {
     height: 100%;
     border-radius: 10px;
-    color: #121212;
     top: 0%;
+}
+.dwnBtn:hover
+{
+    color: var(--white);
+    /* font-weight: 500; */
+}
+
+.mediaLinks
+{
+    width: 100%;
+    display: flex;
+    gap: 10vh;
+    text-align: center;
+    color: #888888;
+}
+.mediaLinks > a{
+    color: #888;
+    text-decoration: none;
+    font-size: 2vh;
 }
 .footer {
     height: 8vh;
@@ -267,6 +283,7 @@ body[theme=dark] {
         padding: 2vh;
     }
     .leftBox{
+        height: 80vh;
         padding: 10vh 0;
         display: flex;
         flex-direction: column;
@@ -289,13 +306,45 @@ body[theme=dark] {
     }
     .rightHome > img
     {
-        margin: 5vh 0;
+        /* margin: vh 0; */
         /* transform: translateX(-5%); */
+    }
+    .mediaLinks
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    .mediaLinks >a 
+    {
+        display: none;
+    }
+    .mediaLinks .arrow
+    {
+        height: 5vh;
+        width: 5vh;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        margin-top: 5vh;
+        transform: rotate(45deg);
+        animation: pulse linear infinite 1s;
     }
     .footer {
         font-size: 2vh;
     }
 }
-
+@keyframes pulse {
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        opacity: 0%;
+    }
+}
 /* Tablet and Smaller Desktop */
 /* @media (min-width: 701px) and (max-width: 1120px) {} */

@@ -4,7 +4,7 @@ import useUserContext from '../context/userContext';
 const DownloadBtn = () => {
   const { colorName } = useUserContext();
   return (
-    <a href={resume} className='dwnBtn' color={colorName} download="Shivam Saxena Resume.pdf">Download CV</a>
+    <a href={resume} className='dwnBtn' color={colorName} download="resume-shivam-saxena.pdf">Download CV</a>
   )
 }
 
