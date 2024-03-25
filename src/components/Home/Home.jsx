@@ -36,7 +36,7 @@ const Home = () => {
 						</span><br />
 						I'm a <span ref={type}/>
 					</h1>
-					<p className='sum'>Welcome to my official Portfolio website where I put<br /> all my work related to Frontend and Software<br /> Development</p>
+					<p className='sum'>Welcome to my official Portfolio website where I put<br /> all my work related to Front-end and Software<br /> Development</p>
 					<DownloadBtn/>
 				</div>
 			</div>

@@ -3,22 +3,22 @@
 @tailwind utilities; */
 @font-face {
     font-family: Gilroy;
-    src: url(Gilroy-Regular.ttf);
+    src: url(../public/Gilroy-Regular.ttf);
 }
 
 @font-face {
     font-family: baiBold;
-    src: url(Bai_Jamjuree/BaiJamjuree-Bold.ttf);
+    src: url(../public/Bai_Jamjuree/BaiJamjuree-Bold.ttf);
 }
 
 @font-face {
     font-family: cairo;
-    src: url(Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+    src: url(../public/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
 }
 
 @font-face {
     font-family: baiRegular;
-    src: url(Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+    src: url(../public/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
 }
 
 :root {
@@ -67,6 +67,7 @@ body[theme=dark] {
     align-items: center;
     list-style-type: none;
     border-bottom: 1px solid;
+    z-index: 10;
 }
 
 .svgLogo>svg>path {
@@ -95,21 +96,28 @@ body[theme=dark] {
     }
 }
 
-.btn,
+.btn {
+    outline: none;
+    background: transparent;
+    border: none;
+    height: 60%;
+    width: fit-content;
+    display: none;
+}
 .btn>svg {
     outline: none;
     background: transparent;
     border: none;
-    height: 80%;
+    height: 100%;
     width: fit-content;
     display: none;
-    z-index: 2;
 }
 
 .rightMenu {
     display: flex;
     gap: 5vh;
     font-size: larger;
+    z-index: 2;
 }
 
 .rightMenu>li>a {
@@ -139,7 +147,10 @@ body[theme=dark] {
     height: 80vh;
     color: var(--white);
 }
-
+.leftBox
+{
+    position: relative;
+}
 .leftHome>.leftBox>h1 {
     color: var(--white);
     font-family: baiBold;
@@ -164,6 +175,8 @@ body[theme=dark] {
 }
 .dwnBtn
 {
+    display: block;
+    width: fit-content;
     position: relative;
     color:var(--skyblue);
     text-decoration: none;
@@ -173,28 +186,28 @@ body[theme=dark] {
     border-radius: 10px;
     font-size: 2vh;
     overflow: hidden;
-    z-index: 10;
+    /* z-index: 10; */
 }
 .dwnBtn::after
 {
     content: '';
     position: absolute;
-    height: 0%;
-    color: #fff;
+    height: 100%;
     width: 100%;
     color: #121212;
     top: 100%;
     left: 0;
-    border-radius: 100% 100% 10px 10px;
+    border-radius: 100%;
     background: var(--skyblue);
     transition: all ease 0.2s;
-    z-index: -1;
+    /* z-index: -1; */
     overflow: hidden;
 }
-.dwnBtn:hover::after
+.dwnBtn:hover::after 
 {
     height: 100%;
     border-radius: 10px;
+    color: #121212;
     top: 0%;
 }
 .footer {
@@ -211,6 +224,10 @@ body[theme=dark] {
 
 /* Mobile */
 @media (max-width: 875px) {
+    .navbar
+    {
+        padding: 0 0.5vh;
+    }
     .svgLogo>svg {
         height: 70%;
     }
@@ -251,6 +268,9 @@ body[theme=dark] {
     }
     .leftBox{
         padding: 10vh 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .leftBox>h1,
     .leftBox>p {
@@ -265,6 +285,7 @@ body[theme=dark] {
 
     .leftBox>p {
         font-size: 2vh !important;
+        margin: 2vh 0;
     }
     .rightHome > img
     {
