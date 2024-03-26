@@ -22,6 +22,12 @@ const About = () => {
 						<p>Hey, I am Shivam Saxena. I'm a Front-End Developer, a UI/UX Designer, a Software Engineer and a Programmer who focused on crafting clean and user-friendly experiences, I am passionate about building software that improves the lives of those around me. <br /><br />
 							I’m a versatile software developer with expertise in C++ and front-end web development. Proven ability to create efficient and user-friendly applications. Strong problem-solving skills, adept at collaborating in fast-paced environments. Eager to contribute technical proficiency to drive innovation in a dynamic team setting.
 						</p>
+						<div className='detailChart'>
+							<p style={{borderColor:color}}><b>Name:</b> Shivam Saxena</p>
+							<p style={{borderColor:color}}><b>Email:</b> saxenashivam2203@gmail.com</p>
+							<p style={{borderColor:color}}><b>Age:</b> {new Date().getFullYear() - 2003}</p>
+							<p><b>From:</b> Uttar Pradesh, India</p>
+						</div>
 						<DownloadBtn/>
 					</div>
 				</div>

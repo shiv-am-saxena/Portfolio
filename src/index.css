@@ -138,7 +138,7 @@ body[theme=dark] {
 
 #home>.rightHome,
 #home>.leftHome {
-    height: 80vh;
+    height: 100%;
     width: 50%;
     padding: 6vh;
     display: flex;
@@ -304,7 +304,6 @@ body[theme=dark] {
 }
 
 .aboutContent .picDiv {
-    height: 100%;
     width: 50%;
     display: flex;
     /* background: var(--green); */
@@ -350,7 +349,28 @@ body[theme=dark] {
     width: 50%;
     color:var(--white);
     font-size: 2.5vh;
+}
 
+.aboutContent .detailCont .detailChart
+{
+    margin-top: 4vh;
+    width: fit-content;
+}
+.aboutContent .detailCont .detailChart p
+{
+    padding: 1vh 0;
+}
+.aboutContent .detailCont .detailChart p:nth-child(1)
+{
+    border-bottom: 2px solid;
+}
+.aboutContent .detailCont .detailChart p:nth-child(2)
+{
+    border-bottom: 2px solid;
+}
+.aboutContent .detailCont .detailChart p:nth-child(3)
+{
+    border-bottom: 2px solid;
 }
 /* About Ended */
 /* Footer Started */
@@ -517,7 +537,26 @@ body[theme=dark] {
         flex-direction: column;
         align-items: center;
     }
-
+    .aboutContent .detailCont .detailChart
+    {
+        margin-top: 4vh;
+    }
+    .aboutContent .detailCont .detailChart p
+    {
+        padding: 1vh 0;
+    }
+    .aboutContent .detailCont .detailChart p:nth-child(1)
+    {
+        border-bottom: 2px solid;
+    }
+    .aboutContent .detailCont .detailChart p:nth-child(2)
+    {
+        border-bottom: 2px solid;
+    }
+    .aboutContent .detailCont .detailChart p:nth-child(3)
+    {
+        border-bottom: 2px solid;
+    }
     .footer {
         font-size: 2vh;
     }
