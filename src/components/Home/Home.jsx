@@ -38,10 +38,10 @@ const Home = () => {
 					</h1>
 					<p className='sum'>Welcome to my official Portfolio website where I put<br /> all my work related to Front-end and Software<br /> Development</p>
 					<DownloadBtn />
-					<div className="mediaLinks">
-						<a href="https://www.github.com/shiv-am-saxena/" target='_blank'>Github</a>
+					<div className="mediaLinks" style={{color:color}}>
+						{/* <a href="https://www.github.com/shiv-am-saxena/" target='_blank'>Github</a>
 						<a href="https://www.linkedin.com/in/shiv-am-saxena/" target='_blank'>Linkedin</a>
-						<a href="https://www.twitter.com/shiv_am_saxena" target='_blank'>Twitter</a>
+						<a href="https://www.twitter.com/shiv_am_saxena" target='_blank'>Twitter</a> */}
 						<span className="arrow" style={{borderColor: color}}></span>
 					</div>
 				</div>
