@@ -325,54 +325,93 @@ body[theme=dark] {
 
 @keyframes blob {
 
-    0%{
+    0% {
         border-radius: 64% 36% 63% 37%/ 57% 60% 40% 43%;
     }
 
     25% {
         border-radius: 57% 43% 60% 40% / 63% 64% 36% 37%;
     }
-    50%
-    {
+
+    50% {
         border-radius: 63% 37% 64% 36%/ 60% 57% 43% 40%;
     }
-    75%
-    {
+
+    75% {
         border-radius: 60% 40% 57% 43%/ 64% 63% 37% 36%;
     }
+
     100% {
         border-radius: 64% 36% 63% 37%/ 57% 60% 40% 43%;
     }
 }
-.detailCont
-{
+
+.detailCont {
     width: 50%;
-    color:var(--white);
+    color: var(--white);
     font-size: 2.5vh;
 }
 
-.aboutContent .detailCont .detailChart
-{
+.aboutContent .detailCont .detailChart {
     margin-top: 4vh;
     width: fit-content;
 }
-.aboutContent .detailCont .detailChart p
-{
+
+.aboutContent .detailCont .detailChart p {
     padding: 1vh 0;
 }
-.aboutContent .detailCont .detailChart p:nth-child(1)
-{
+
+.aboutContent .detailCont .detailChart p:nth-child(1) {
     border-bottom: 2px solid;
 }
-.aboutContent .detailCont .detailChart p:nth-child(2)
-{
+
+.aboutContent .detailCont .detailChart p:nth-child(2) {
     border-bottom: 2px solid;
 }
-.aboutContent .detailCont .detailChart p:nth-child(3)
-{
+
+.aboutContent .detailCont .detailChart p:nth-child(3) {
     border-bottom: 2px solid;
 }
+
 /* About Ended */
+/* Platform Started */
+#skill {
+    height: 100%;
+    width: 100%;
+    /* padding: 4vh; */
+}
+
+.swiperContainer {
+    height: 100%;
+    width: 100%;
+    padding: 4vh;
+}
+
+.swiperContainer .swiper {
+    width: 75%;
+    height: 100%;
+    padding: 5vh 0;
+}
+
+.swiper-slide {
+    padding: 2vh;
+    height: 25vh;
+    aspect-ratio: 1/1;
+    text-align: center;
+    background: transparent;
+    /* color:var(--skyblue); */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiperContainer .swiper .swiper-slide svg {
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+/* Platforms Ended */
 /* Footer Started */
 .footer {
     height: 8vh;
@@ -500,36 +539,36 @@ body[theme=dark] {
     }
 
     .fadedLabel {
-        font-size: 15vw;
+        font-size: 12.5vw;
     }
 
     .heading {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
-    #about
-    {
+
+    #about {
         padding: 0;
         height: 100%;
         width: 100%;
     }
-    #about .aboutContent
-    {
+
+    #about .aboutContent {
         flex-direction: column;
         height: fit-content;
         width: 100%;
         padding: 2vh;
     }
-    .aboutContent .picDiv
-    {
+
+    .aboutContent .picDiv {
         /* background: var(--green); */
         width: 100%;
     }
-    .aboutContent .picDiv .bgCont
-    {
+
+    .aboutContent .picDiv .bgCont {
         width: 75%;
     }
-    .aboutContent .detailCont
-    {
+
+    .aboutContent .detailCont {
         width: 100%;
         padding: 2vh;
         font-size: 2vh;
@@ -537,26 +576,63 @@ body[theme=dark] {
         flex-direction: column;
         align-items: center;
     }
-    .aboutContent .detailCont .detailChart
-    {
+
+    .aboutContent .detailCont .detailChart {
         margin-top: 4vh;
     }
-    .aboutContent .detailCont .detailChart p
-    {
+
+    .aboutContent .detailCont .detailChart p {
         padding: 1vh 0;
     }
-    .aboutContent .detailCont .detailChart p:nth-child(1)
-    {
+
+    .aboutContent .detailCont .detailChart p:nth-child(1) {
         border-bottom: 2px solid;
     }
-    .aboutContent .detailCont .detailChart p:nth-child(2)
-    {
+
+    .aboutContent .detailCont .detailChart p:nth-child(2) {
         border-bottom: 2px solid;
     }
-    .aboutContent .detailCont .detailChart p:nth-child(3)
-    {
+
+    .aboutContent .detailCont .detailChart p:nth-child(3) {
         border-bottom: 2px solid;
     }
+    #skill
+    {
+        height: 100%;
+        width: 100%;
+        padding: 0 2vh;
+    }
+    .swiperContainer {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .swiperContainer .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 2vh 0;
+    }
+
+    .swiper-slide {
+        height: fit-content;
+        width: 50%;
+        text-align: center;
+        background: transparent;
+        /* color:var(--skyblue); */
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet
+    {
+        width: 4px !important;
+        height: 4px !important;
+        margin: 0 2px p !important;
+    }
+
     .footer {
         font-size: 2vh;
     }

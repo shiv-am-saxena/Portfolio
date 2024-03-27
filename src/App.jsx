@@ -27,10 +27,10 @@ const App = () => {
 			{/* <button className='themeBtn' onClick={mode? darkMode:lightMode} >{mode? 'dark':'light'}</button> */}
 			<Home/>
 			<About/>
+			<Skill/>
 			<Footer />
 		</ContextProvider>
 	)
-	// style={{boxShadow: `5px 5px 0px ${color},10px 10px 0px ${color}cc,15px 15px 0 ${color}b3,20px 20px 0 ${color}99,25px 25px 0 ${color}80,30px 30px 0 ${color}66,35px 35px 0 ${color}4d,40px 40px 0 ${color}33,45px 45px 0 ${color}1a;`}}
 }
 
 export default App
