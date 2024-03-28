@@ -8,5 +8,8 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import DownloadBtn from "./DownloadBtn";
 import HeadingComponent from "./HeadingComponent";
+import Education from "./Education/Education";
+import Projects from "./Projects/Projects";
+import Card from "./Card";
 
-export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn, HeadingComponent};
+export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn, HeadingComponent, Education, Projects, Card};

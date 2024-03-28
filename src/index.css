@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: baiBold;
-    src: url(../public/Bai_Jamjuree/BaiJamjuree-Bold.ttf);
+    src: url(../public/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
 }
 
 @font-face {
@@ -16,6 +16,11 @@
 @font-face {
     font-family: baiRegular;
     src: url(../public/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+    font-family: baiMedium;
+    src: url(../public/Bai_Jamjuree/BaiJamjuree-Light.ttf);
 }
 
 :root {
@@ -412,6 +417,88 @@ body[theme=dark] {
 }
 
 /* Platforms Ended */
+/* Summary Started */
+#education {
+    height: 100%;
+    width: 100%;
+    padding: 4vh;
+}
+
+#education .summary {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    position: relative;
+    justify-content: center;
+}
+
+.summary .education,
+.summary .courses {
+    height: 100%;
+    position: sticky;
+    left: 0;
+    top: 9vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    gap: 4vh;
+}
+
+.card {
+    height: 30vh;
+    width: 75%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid;
+    border-radius: 14px;
+}
+
+.card p:first-child {
+    color: #fff;
+    background: var(--skyblue);
+    font-family: baiRegular;
+    width: fit-content;
+    /* font-weight:bold; */
+    font-size: larger;
+    padding: 0.5vh 1vh;
+    border-radius: 5px;
+}
+
+.card h1 {
+    letter-spacing: 2px;
+    font-family: baiRegular;
+}
+
+.card h2 {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: baiMedium;
+}
+
+.card a {
+    line-height: 3.5vh;
+    text-decoration: none;
+    color: var(--skyblue);
+    font-size: 2.25vh;
+}
+
+.card a svg {
+    height: 2.25vh;
+    transform: translateY(4px);
+}
+
+.card p:last-child {
+    font-size: 2vh;
+    letter-spacing: 1px;
+    /* font-weight:600; */
+}
+
+/* Summary Ended */
 /* Footer Started */
 .footer {
     height: 8vh;
@@ -596,12 +683,13 @@ body[theme=dark] {
     .aboutContent .detailCont .detailChart p:nth-child(3) {
         border-bottom: 2px solid;
     }
-    #skill
-    {
+
+    #skill {
         height: 100%;
         width: 100%;
         padding: 0 2vh;
     }
+
     .swiperContainer {
         height: 100%;
         width: 100%;
@@ -626,11 +714,94 @@ body[theme=dark] {
         align-items: center;
     }
 
-    .swiper-pagination-bullet
-    {
+    .swiper-pagination-bullet {
         width: 4px !important;
         height: 4px !important;
         margin: 0 2px p !important;
+    }
+
+    #education {
+        height: 100%;
+        width: 100%;
+        padding: 2vh;
+    }
+
+    #education .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .summary .education,
+    .summary .courses {
+        height: 100%;
+        position: static;
+        width: 100%;
+        margin: 2vh 0;
+        padding: 0 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        gap: 4vh;
+    }
+    .summary .education h1,
+    .summary .courses h1{
+        font-size: 2.65vh;
+    }
+    .card {
+        height: 100%;
+        width: 100%;
+        padding: 3vh;
+        display: flex;
+        gap: .5vh;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid;
+        border-radius: 14px;
+    }
+
+    .card p:first-child {
+        color: #fff;
+        background: var(--skyblue);
+        font-family: baiRegular;
+        width: fit-content;
+        font-size: 1.5vh;
+        padding: 0.5vh 1vh;
+        border-radius: 5px;
+    }
+
+    .card h1 {
+        letter-spacing: 2px;
+        font-size: 2.5vh !important;
+        font-family: baiRegular;
+    }
+
+    .card h2 {
+        font-size: 1.9vh;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-family: baiMedium;
+    }
+
+    .card a {
+        line-height: 2vh;
+        text-decoration: none;
+        color: var(--skyblue);
+        font-size: 1.9vh;
+    }
+
+    .card a svg {
+        height: 1.9vh;
+        transform: translateY(4px);
+    }
+
+    .card p:last-child {
+        font-size: 2vh;
+        letter-spacing: 1px;
+        /* font-weight:600; */
     }
 
     .footer {
