@@ -14,7 +14,7 @@ const Skill = () => {
 						spaceBetween={(screen.width > 875) ? 30 : 5}
 						centeredSlides={false}
 						autoplay={{ delay: 2500, disableOnInteraction: false }}
-						pagination={{ clickable: true }}
+						pagination={{ clickable: false }}
 						loop={true}
 						navigation={false}
 						modules={[Autoplay, Pagination, Navigation]}
