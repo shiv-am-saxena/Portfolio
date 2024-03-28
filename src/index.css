@@ -448,13 +448,14 @@ body[theme=dark] {
 }
 
 .card {
-    height: 30vh;
+    height: 100%;
     width: 75%;
     padding: 4vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid;
+    gap: 1vh;
     border-radius: 14px;
 }
 
