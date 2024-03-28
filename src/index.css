@@ -424,7 +424,7 @@ body[theme=dark] {
     padding: 4vh;
 }
 
-#education .summary {
+#education .summary .cardContainer {
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -432,15 +432,15 @@ body[theme=dark] {
     justify-content: center;
 }
 
-.summary .education,
-.summary .courses {
+.summary .cardContainer .education,
+.summary .cardContainer .courses {
     height: 100%;
     position: sticky;
     left: 0;
     top: 9vh;
     width: 50%;
     display: flex;
-    margin: 2vh 0;
+    margin: 4vh 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -484,6 +484,7 @@ body[theme=dark] {
 
 .card a {
     line-height: 3.5vh;
+    width: fit-content;
     text-decoration: none;
     color: var(--skyblue);
     font-size: 2.25vh;
@@ -499,6 +500,47 @@ body[theme=dark] {
     letter-spacing: 1px;
     /* font-weight:600; */
 }
+
+.skillCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    margin: 4vh 0;
+}
+
+.skillBx {
+    width: 50%;
+    height: 100%;
+    padding: 1vh;
+    position: relative;
+}
+
+.skillBx>.textBx {
+    width: 100%;
+    display: flex;
+    font-size: 2vh;
+    color: var(--white);
+    justify-content: space-between;
+}
+
+.skillBx .bgSlider {
+    width: 100%;
+    background: var(--grey);
+    height: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.skillBx .bgSlider .inputSlider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+    border-radius: 10px;
+}
+
 
 /* Summary Ended */
 /* Footer Started */
@@ -728,15 +770,15 @@ body[theme=dark] {
         padding: 2vh;
     }
 
-    #education .summary {
+    #education .summary .cardContainer {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
     }
 
-    .summary .education,
-    .summary .courses {
+    .summary .cardContainer .education,
+    .summary .cardContainer .courses {
         height: 100%;
         position: static;
         width: 100%;
@@ -749,10 +791,12 @@ body[theme=dark] {
         color: var(--white);
         gap: 4vh;
     }
-    .summary .education h1,
-    .summary .courses h1{
+
+    .summary .cardContainer .education h1,
+    .summary .cardContainer .courses h1 {
         font-size: 2.65vh;
     }
+
     .card {
         height: 100%;
         width: 100%;
@@ -804,6 +848,37 @@ body[theme=dark] {
         font-size: 2vh;
         letter-spacing: 1px;
         /* font-weight:600; */
+    }
+
+    .skillBx {
+        width: 100%;
+        height: 100%;
+        padding: 1vh;
+        position: relative;
+    }
+
+    .skillBx>.textBx {
+        width: 100%;
+        display: flex;
+        font-size: 2vh;
+        color: var(--white);
+        justify-content: space-between;
+    }
+
+    .skillBx .bgSlider {
+        width: 100%;
+        background: var(--grey);
+        height: 10px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .skillBx .bgSlider .inputSlider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 10px;
+        border-radius: 10px;
     }
 
     .footer {

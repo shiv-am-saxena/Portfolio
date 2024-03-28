@@ -11,5 +11,5 @@ import HeadingComponent from "./HeadingComponent";
 import Education from "./Education/Education";
 import Projects from "./Projects/Projects";
 import Card from "./Card";
-
-export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn, HeadingComponent, Education, Projects, Card};
+import SkillRange from "./SkillRange";
+export {About , Home, Skill, Logo, Contact, Hamburger, NavBar, Footer, DownloadBtn, HeadingComponent, Education, Projects, Card, SkillRange};
