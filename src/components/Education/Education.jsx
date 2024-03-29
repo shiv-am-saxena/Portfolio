@@ -31,7 +31,7 @@ const Education = () => {
                         <SkillRange name="CSS" range="85"/>
                         <SkillRange name="JavaScript" range="82"/>
                         <SkillRange name="Python" range="76"/>
-                        <SkillRange name="Red Teaming" range="70"/>
+                        <SkillRange name="Web Application Security" range="60"/>
                     </div>
                 </div>
             </div>
