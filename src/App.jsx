@@ -13,6 +13,7 @@ const App = () => {
 			<About/>
 			<Skill/>
 			<Education/>
+			<Contact/>
 			<Footer />
 		</ContextProvider>
 	)

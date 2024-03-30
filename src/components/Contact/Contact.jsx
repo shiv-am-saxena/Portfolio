@@ -1,8 +1,10 @@
-import React from 'react'
+import { HeadingComponent } from '../index'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <HeadingComponent data={{heading: 'GEt in touch', label:'Contact'}}/>
+    </>
   )
 }
 
