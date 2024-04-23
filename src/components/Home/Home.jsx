@@ -32,7 +32,7 @@ const Home = () => {
 				<div className='leftBox'>
 					<h1>Hey,<br />
 						I am
-						<span style={{ color: color }}> Shivam Saxena.
+						<span id="name" style={{ color: color }}> Shivam Saxena.
 						</span><br />
 						I'm a <span ref={type} />
 					</h1>

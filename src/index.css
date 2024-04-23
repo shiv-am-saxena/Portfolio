@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: ceveat;
+    src: url(../public/Caveat/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
     font-family: cairo;
     src: url(../public/Cairo/static/Cairo-Light.ttf);
 }
@@ -63,6 +68,8 @@ body[theme=dark] {
     width: 100%;
     display: flex;
     /* flex-wrap:nowrap; */
+    background: #121212;
+    /* backdrop-filter: blur(100px); */
     justify-content: space-around;
     padding: 0 2vh;
     gap: 3vh;
@@ -163,6 +170,11 @@ body[theme=dark] {
     font-family: baiBold;
     /* width: fit-content; */
     line-height: 5vh;
+}
+
+.leftHome>.leftBox>h1>#name {
+    font-family: ceveat;
+    font-size: larger;
 }
 
 .leftHome>.leftBox>h1>span {
