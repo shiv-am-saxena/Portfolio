@@ -82,7 +82,7 @@ body[theme=dark] {
 
 .svgLogo>svg>path {
     z-index: 2;
-    animation: animate 8s both infinite;
+    animation: animate 7s both infinite;
 }
 
 
@@ -91,12 +91,7 @@ body[theme=dark] {
         stroke-dashoffset: 0;
     }
 
-    54% {
-        stroke-dashoffset: 190;
-        fill: transparent;
-    }
-
-    56% {
+    50% {
         stroke-dashoffset: 190;
         fill: transparent;
     }
