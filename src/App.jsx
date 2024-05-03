@@ -2,9 +2,12 @@
 import { About, Skill, Home, Contact, NavBar, Footer, Education } from './components';
 import { useEffect, useState } from 'react';
 import { ContextProvider } from './context/userContext'
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 const App = () => {
 	const [color, setColor] = useState('#44bbff');
 	const [colorName, setColorName] = useState('skyblue');
+	injectSpeedInsights();
 	return (
 		<ContextProvider value={{ color, colorName }}>
 			<NavBar />
