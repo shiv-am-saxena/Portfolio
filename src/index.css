@@ -1,31 +1,31 @@
 @font-face {
 	font-family: Gilroy;
-	src: url(Fonts/Gilroy-Regular.ttf);
+	src: url(../public/Fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
 	font-family: baiBold;
-	src: url(Fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
+	src: url(../public/Fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf);
 }
 
 @font-face {
 	font-family: ceveat;
-	src: url(Fonts/Caveat/Caveat-VariableFont_wght.ttf);
+	src: url(../public/Fonts/Caveat/Caveat-VariableFont_wght.ttf);
 }
 
 @font-face {
 	font-family: cairo;
-	src: url(Fonts/Cairo/static/Cairo-Light.ttf);
+	src: url(../public/Fonts/Cairo/static/Cairo-Light.ttf);
 }
 
 @font-face {
 	font-family: baiRegular;
-	src: url(Fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+	src: url(../public/Fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
 }
 
 @font-face {
 	font-family: baiLight;
-	src: url(Fonts/Bai_Jamjuree/BaiJamjuree-Light.ttf);
+	src: url(../public/Fonts/Bai_Jamjuree/BaiJamjuree-Light.ttf);
 }
 
 :root {
