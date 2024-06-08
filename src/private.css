@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-Regular.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+.loginElem{
+    background: #121212;
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+    cursor:auto;
+}
+.loginElem form{
+    width: 25%;
+    font-size: 3vh;
+    cursor:auto;
+}
+.loginElem form input{
+    outline: none;
+    padding: 1vh;
+    font-size: 2.2vh;
+    cursor:auto;
+    border-radius: 10px;
+}
+.logout
+{
+    cursor:auto;
+}
+.messagesBx{
+    padding: 10vh;
+    display: flex;
+    gap:2.5vh;
+    font-size: 2.5vh;
+    flex-direction: column;
+}
