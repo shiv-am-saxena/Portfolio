@@ -5,6 +5,7 @@ import About from './assets/Components/About';
 import Skill from './assets/Components/Skill';
 import Education from './assets/Components/Education';
 import { useEffect } from 'react';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -14,6 +15,7 @@ import Contact from './assets/Components/Contact';
 const App = () => {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
   gsap.registerPlugin();
+  injectSpeedInsights();
   useGSAP(() => {
     let homeLine = gsap.timeline();
     homeLine.from('#navbar', {
@@ -208,7 +210,7 @@ const App = () => {
       <Skill />
       <Education />
       {/* <Projects /> */}
-      <Contact/>
+      <Contact />
       <Footer />
     </>
   )
