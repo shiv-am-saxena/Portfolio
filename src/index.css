@@ -464,8 +464,11 @@ p,
 
 .footer>p {
 	color: #fff;
+	text-decoration: none;
 }
-
+.footer > p > a{
+	text-decoration: none;
+}
 #education {
 	height: 100%;
 	width: 100%;
@@ -1007,4 +1010,22 @@ button {
 	100% {
 		opacity: 0;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.messagesBx{
+    padding: 10vh;
+    display: flex;
+    gap:2.5vh;
+    font-size: 2.5vh;
+    flex-direction: column;
 }

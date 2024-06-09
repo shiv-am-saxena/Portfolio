@@ -1,4 +1,4 @@
-import '../../private.css'
+import '../../index.css'
 import Navbar from './navbar'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
